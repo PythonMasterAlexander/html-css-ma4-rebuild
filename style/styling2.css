@@ -1,0 +1,105 @@
+/*-- GLOBAL STYLES --*/
+/*-- DONT USE DISPLAY INLINE-BLOCK ON BLOCK ELEMENTS --*/
+body {
+    font: normal 24px 'Roboto', 'Arial', sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+header, footer {
+    background-color: #F8FBF8;
+    max-height: 350px;
+    max-width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer li {
+    padding-right: 5px;
+}
+
+h2, h3 {
+    font: normal 18px 'Roboto', 'Arial', sans-serif;
+}
+
+h1 {
+    font: normal 43px 'David Libre', 'Georgia', serif;
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 50px 0px 0px;
+}
+
+main {
+    background-color:  #fcfff9;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+/*-- PSEUDO CLASSES --*/
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #247ba0;
+}
+
+a:hover {
+    background-color: #ca2e55;
+    color: #000000;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+a:active {
+    color: #fff05a;
+    text-decoration: underline;
+}
+
+/*-- ATTRIBUTE SELECTORS --*/
+[type] {
+    border: 1px solid #247ba0;
+}
+
+[title="Guidelines for covid"] {
+    font-size: 16px;
+    float: right;
+    padding: 10px 300px 0px 0px;
+}
+/*-- CLASSES --*/
+.header-styling section:first-child {
+    background-color: #ca2e55;
+    color: #000000;
+    min-height: 35px;
+}
+
+.footer-styling a {
+    background-color: initial;
+    padding: 0px;
+}
+
+.footer-styling > section > h2, ul{
+    display: inline-block;
+    padding-right: 20px;
+}
+/*-- ID'S --*/
+/*-- MEDIA QUERY'S --*/
+@media only screen and (min-width: 1080px) {
+}
+
+/*In otherwords:
+
+    If the element has inline styling, that automatically1 wins (1,0,0,0 points)
+    For each ID value, apply 0,1,0,0 points
+    For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points
+    For each element reference, apply 0,0,0,1 point
+*/
