@@ -4,29 +4,53 @@
     <meta charset="UTF-8">
     <meta name="description" content="Nice Cream order page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>Nice Cream Order Page, where you can get the best ice cream in San Francisco</title>
     <link rel="stylesheet" href="style/styling.css">
   </head>
     <body>
-      <div class="content-wrapper">
-        <header class="header-styling">
-          <div class="nice-cream-logo"></div>
+      <div class="contentWrapper">
+        <header>
           <nav>
-            <a title="Link to MY ACCOUNT Page">ice cream</a>
-            <a href="index.html" title="Link to HOME Page" id="home-default-styling">home</a>
+            <a href="index.html" class="activeLink">ice cream</a>
+            <a href="form.html" class="activeLink">home</a>
           </nav>
         </header>
-        <main role="main" class="main-content">
-          <h1>Order</h1>
+        <main>
+          <h1>Order Ice Cream from Nice Cream</h1>
+          <section>
+            <section></section>
+            <section></section>
+            <section></section>
+          </section>
           <form>
-            <input class="submit-button" type="submit" value="SEND">
+            <fieldset>
+              <legend>Your delivery information</legend>
+              <div>
+                <label for="fullNameId">Your Name</label>
+                <input type="text" name="fullName" id="fullNameId">
+              </div>
+              <div>
+                <label for="emailId">Your Email</label>
+                <input type="email" name="email" id="emailId">
+              </div>
+              <div> 
+                <label for="deliveryTimeId">Time of delivery</label>
+                <input type="time" name="deliveryTime" id="deliveryTimeId">
+              </div>
+              <div>
+                <label for="addressId">Your Address</label>
+                <input type="text" name="address" id="addressId">
+              </div>
+            </fieldset>
           </form>
         </main>
-          <footer role="contentinfo" class="footer-styling">
+          <footer>
             <h2>social media</h2>
-            <a href="https://www.facebook.com/" title="Link to Facebook Home Page" target="_self"></a>
-            <a href="https://www.youtube.com/" title="Link to Youtube Home Page" target="_self"></a>
-            <a href="https://twitter.com/" title="Link to Twitter Home Page" target="_self"></a>
+            <section> 
+              <a href="https://www.facebook.com" target="_blank"></a>
+              <a href="https://www.youtube.com" target="_blank"></a>
+              <a href="https://twitter.com" target="_blank"></a>
+            </section>
           </footer>
       </div>
     </body>
