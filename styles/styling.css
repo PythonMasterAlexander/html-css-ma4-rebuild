@@ -44,6 +44,10 @@ label {
   font-size: 1.5rem;
 }
 
+[for=vanillaQuantityId], [for=strawberryQuantityId], [for=chocolateQuantityId] {
+  font-size: 1rem;
+}
+
 a {
   padding: 10px;
   text-decoration: none;
