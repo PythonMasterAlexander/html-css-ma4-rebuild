@@ -27,8 +27,12 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
   font: bold 2.5rem 'Bevan', 'Impact', serif;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 legend {
@@ -70,18 +74,14 @@ fieldset {
   align-items: center;
   border-radius: 2px;
   border: solid black 2px;
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 20px;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 
 fieldset section {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -95,6 +95,11 @@ input {
 
 [name=deliveryTime], [name=address] {
   width: 200px;
+}
+
+[type="checkbox"] {
+  height: 25px;
+  width: 25px;
 }
 
 
@@ -123,6 +128,10 @@ footer {
 
 .activeLink{
   color: #000000;
+}
+
+fieldset section, fieldset {
+  display: flex;
 }
 
 @media(max-width: 800px) {
