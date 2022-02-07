@@ -16,82 +16,33 @@ html {
   font-size: 16px;
 }
 
+@font-face {
+  font-family: 'Bevan', cursive;
+  font-family: 'Oxygen', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Bevan&family=Oxygen&display=swap');
+}
+
 body {
-  font: normal 24px 'Roboto', 'Arial', sans-serif;
-  margin: 0px auto;
+  font: normal 2rem 'Oxygen', 'Arial', sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  font: bold 2.5rem 'Bevan', 'Impact', serif;
+}
+
+legend {
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 1.5rem;
 }
 
 a {
   padding: 10px;
   text-decoration: none;
-}
-
-fieldset {
-  border: none;
-  text-align: left;
-  margin: 50px auto;
-}
-
-h1 {
-  font: normal 43px 'David Libre', 'Georgia', serif;
-  padding: 20px 0px 0px 20px;
-}
-
-h2, h3 {
-  display: inline-block;
-  font: normal 18px 'Roboto', 'Arial', sans-serif;
-  padding-right: 15px;
-}
-
-li {
-  font-size: 27px;
-  display: inline-block;
-  padding-right: 30px;
-}
-
-main {
-  max-width: 1248px;
-  margin: 0 auto;
-}
-
-form p {
-  font-size: 16px;
-}
-
-legend {
-  margin-bottom: 20px;
-}
-
-label {
-  font-size: 14px;
-}
-
-span {
-  color: #ca2e55;
-  padding: 0px 20px 0px 20px;
-}
-
-input[class=form__input] {
-  border: solid 1px #247ba0;
-}
-
-header {
-  border-bottom: solid 5px #247ba0;
-}
-
-header, footer {
-  background-color: #F8FBF8;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-header ul {
-  margin: 0px;
-  padding-top: 40px;
-}
-
-footer ul {
-  margin: 0px;
 }
 
 a:visited {
@@ -106,56 +57,36 @@ a:hover {
   text-decoration: underline;
 }
 
-.header-styling__guidlines-section {
-  background-color: #ca2e55;
-  flex: 1;
-  text-align: right;
-  font-size: 19px;
-  min-height: 35px;
+header {
+  border-bottom: solid 5px #247ba0;
 }
 
-.header-styling__guidlines-section a {
-  display: inline-block;
-  padding-right: 40px;
+main {
+  max-width: 1248px;
+  margin: 0 auto;
 }
 
-.header-styling__navigation-section {
-  flex: 1;
+fieldset {
+  align-items: center;
+  border-radius: 2px;
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+input {
+  border: solid black 2px;
+  display: block;
+}
+
 
 footer {
   border-top: solid 5px #247ba0;
   max-height: 125px;
 }
 
-.main-content__article-main-content__container-1 {
-  flex: 1;
-  padding-left: 10px;
-}
-
-.main-content__article-main-content__container-2 {
-  flex: 1;
-  margin: auto auto;
-}
-
-.main-content__article-extra-content__section--content {
-  border-top: solid 5px #247ba0;
-  flex: 1;
-  margin: 10px auto;
-  padding-left: 10px;
-}
-
-.main-content__article-extra-content__aside--content {
-  flex: 1;
-}
-
-.main-container__fieldset--container-one {
-  flex: 1;
-}
-
-.main-container__fieldset--container-two {
-  flex: 1;
-}
 
 .submitButton {
   background-color: #62FF74;
